@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Future-Forward Minimalism Portfolio - Interactive Designer & Developer">
+    <title>Portfolio | Future-Forward Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Floating Background Objects -->
+    <div class="floating-objects" aria-hidden="true">
+        <div class="floating-object circle-1"></div>
+        <div class="floating-object circle-2"></div>
+        <div class="floating-object circle-3"></div>
+        <div class="floating-object circle-4"></div>
+        <div class="floating-object square-1"></div>
+        <div class="floating-object square-2"></div>
+        <div class="particle-container"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="Home">
+                <span class="logo-text">Portfolio</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                <span class="theme-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section with 3D Element -->
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-content" data-parallax="0.3">
+                    <p class="hero-greeting">Hello</p>
+                    <h1 class="hero-title">
+                        <span class="title-line" data-parallax="0.2">Om Kumar Sahu</span>
+                    </h1>
+                    <p class="hero-role">
+                        <span class="typing-text"></span>
+                    </p>
+                    <p class="hero-subtitle" data-parallax="0.5">
+                        B.Tech CSE (AI/ML) Student | Microsoft Azure Certified | Python & ML Developer | Problem Solver
+                    </p>
+                    <div class="hero-cta" data-parallax="0.6">
+                        <a href="#about" class="cta-button primary">About Me</a>
+                        <a href="#contact" class="cta-button secondary">Get in Touch</a>
+                        <a href="https://blob1405.blob.core.windows.net/resume/Om_Kumar Resuma.pdf" class="cta-button resume" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Resume
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/om-kumar-sahu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/omsahu" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container" data-parallax="0.4">
+                    <div class="profile-image-wrapper">
+                        <img src="profile-photo.png" alt="Om Kumar Sahu - Profile Picture" class="profile-image">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <span class="scroll-text">Scroll</span>
+                <span class="scroll-line"></span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p class="about-text">
+                        I am a motivated B.Tech student specializing in AI and Machine Learning with a strong academic foundation in algorithms, 
+                        mathematics, and data structures. Proficient in Python programming and passionate about developing scalable ML solutions. 
+                        Microsoft Azure Fundamentals certified, seeking opportunities to apply technical skills in challenging development or data 
+                        science internships. Solved 100+ coding problems and actively participate in college tech initiatives.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item" tabindex="0">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <rect width="48" height="48" rx="8" fill="#E8F4F8"/>
+                                    <path d="M24 18L18 21v6l6 3 6-3v-6l-6-3z" fill="#0EA5E9"/>
+                                    <circle cx="24" cy="24" r="2" fill="#0EA5E9"/>
+                                </svg>
+                            </div>
+                            <h3>Python</h3>
+                            <p>Advanced Programming & AI/ML Development</p>
+                        </div>
+                        <div class="skill-item" tabindex="0">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <rect width="48" height="48" rx="8" fill="#E8F4F8"/>
+                                    <rect x="16" y="16" width="16" height="16" rx="1" fill="none" stroke="#14B8A6" stroke-width="2"/>
+                                    <text x="24" y="28" text-anchor="middle" fill="#14B8A6" font-size="10" font-weight="bold">C++</text>
+                                </svg>
+                            </div>
+                            <h3>C & C++</h3>
+                            <p>Data Structures & Algorithms</p>
+                        </div>
+                        <div class="skill-item" tabindex="0">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <rect width="48" height="48" rx="8" fill="#E8F4F8"/>
+                                    <circle cx="24" cy="24" r="8" fill="none" stroke="#0EA5E9" stroke-width="2"/>
+                                    <circle cx="24" cy="24" r="3" fill="#0EA5E9"/>
+                                </svg>
+                            </div>
+                            <h3>HTML/CSS</h3>
+                            <p>Web Development & Design</p>
+                        </div>
+                        <div class="skill-item" tabindex="0">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <rect width="48" height="48" rx="8" fill="#E8F4F8"/>
+                                    <circle cx="24" cy="24" r="8" fill="none" stroke="#14B8A6" stroke-width="2"/>
+                                    <path d="M20 24l3 3 5-6" stroke="#14B8A6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3>SQL</h3>
+                            <p>Database Design & Management</p>
+                        </div>
+                        <div class="skill-item" tabindex="0">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <rect width="48" height="48" rx="8" fill="#E8F4F8"/>
+                                    <path d="M24 18l-6 3v6l6 3 6-3v-6l-6-3z" fill="none" stroke="#0EA5E9" stroke-width="2"/>
+                                    <path d="M18 21l6 3 6-3" stroke="#0EA5E9" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3>Microsoft Azure</h3>
+                            <p>Azure Fundamentals (AZ-900)</p>
+                        </div>
+                        <div class="skill-item" tabindex="0">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 48 48" width="48" height="48">
+                                    <rect width="48" height="48" rx="8" fill="#E8F4F8"/>
+                                    <path d="M24 18l-5 2.5v5l5 2.5 5-2.5v-5l-5-2.5z" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3>ML Libraries</h3>
+                            <p>Pandas, NumPy, Scikit-Learn, Matplotlib</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education" id="education">
+            <div class="container">
+                <h2 class="section-title">My Education</h2>
+                <p class="section-subtitle">Education is the most powerful weapon which you can use to change the world</p>
+                <div class="education-grid">
+                    <div class="education-card" tabindex="0">
+                        <div class="education-image">
+                            <img src="rungta-college.jpg" alt="Rungta College of Engineering and Technology" class="college-image">
+                        </div>
+                        <div class="education-content">
+                            <h3>B.Tech - Computer Science and Engineering (AIML)</h3>
+                            <p class="education-institute">Rungta College of Engineering and Technology, Bhilai</p>
+                            <p class="education-year">Aug 2023 - May 2027 | Currently Pursuing</p>
+                            <p class="education-description">Relevant Coursework: Data Structures & Algorithms, OOP, DBMS, AI, Probability & Statistics. Strong focus on computational logic and applied mathematics.</p>
+                        </div>
+                    </div>
+                    <div class="education-card" tabindex="0">
+                        <div class="education-image">
+                            <img src="dav-school.jpg" alt="GURUKUL E. Hr. Sec. School" class="college-image">
+                        </div>
+                        <div class="education-content">
+                            <h3>Higher Secondary Education (Class XII)</h3>
+                            <p class="education-institute">GURUKUL E. Hr. Sec. School, Baloda Bazar</p>
+                            <p class="education-year">Jun 2020 - Apr 2021 | Science Stream</p>
+                            <p class="education-description">Built a solid academic foundation in sciences and mathematics, facilitating advanced studies in technology fields.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work History Timeline -->
+        <section class="work-timeline" id="work">
+            <div class="container">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="timeline-wrapper" role="region" aria-label="Work history timeline">
+                    <button class="timeline-nav timeline-nav-prev" aria-label="Scroll timeline left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="timeline-container" id="timeline-container" tabindex="0">
+                        <div class="timeline-item" data-year="2025">
+                            <div class="timeline-content">
+                                <span class="timeline-year">Apr 2025</span>
+                                <h3 class="timeline-title">Microsoft Azure Fundamentals</h3>
+                                <p class="timeline-company">Microsoft Certified (AZ-900)</p>
+                                <p class="timeline-description">Validated foundational knowledge of cloud services, workloads, security, and privacy in Microsoft Azure</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2024">
+                            <div class="timeline-content">
+                                <span class="timeline-year">Oct 2024</span>
+                                <h3 class="timeline-title">100+ Coding Problems Solved</h3>
+                                <p class="timeline-company">HackerRank & LeetCode</p>
+                                <p class="timeline-description">Enhanced logic building and problem-solving skills through competitive programming</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2024">
+                            <div class="timeline-content">
+                                <span class="timeline-year">2024</span>
+                                <h3 class="timeline-title">College Tech Club Member</h3>
+                                <p class="timeline-company">Rungta College</p>
+                                <p class="timeline-description">Active member organizing workshops on Python and AI basics, promoting tech education</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2024">
+                            <div class="timeline-content">
+                                <span class="timeline-year">2024</span>
+                                <h3 class="timeline-title">Hackathon Participation</h3>
+                                <p class="timeline-company">College-level Events</p>
+                                <p class="timeline-description">Collaborated with teams to build software solutions in coding hackathons</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2023">
+                            <div class="timeline-content">
+                                <span class="timeline-year">Aug 2023</span>
+                                <h3 class="timeline-title">Started B.Tech Journey</h3>
+                                <p class="timeline-company">Rungta College</p>
+                                <p class="timeline-description">Began Computer Science Engineering with AI & ML specialization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="timeline-nav timeline-nav-next" aria-label="Scroll timeline right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section with Filtering -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <!-- Filter Controls -->
+                <div class="filter-controls" role="toolbar" aria-label="Filter projects">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="web" aria-pressed="false">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+                    <button class="filter-btn" data-filter="design" aria-pressed="false">Design</button>
+                    <button class="filter-btn" data-filter="3d" aria-pressed="false">3D/Interactive</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <article class="project-card" data-category="web" tabindex="0">
+                        <div class="project-image">
+                            <img src="projects/house-price.jpg" alt="House Price Prediction Model" class="project-img" onerror="this.style.display='none'; this.parentElement.querySelector('.project-placeholder').style.display='block';">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: none;"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">House Price Prediction Model</h3>
+                            <p class="project-description">Machine Learning model to predict housing prices based on features like location and square footage. Performed data cleaning and visualization to identify key correlations. Achieved 85% accuracy using Linear Regression and Decision Tree algorithms.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Scikit-Learn</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">Matplotlib</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" tabindex="0">
+                        <div class="project-image">
+                            <img src="projects/student-management.jpg" alt="Student Management System" class="project-img" onerror="this.style.display='none'; this.parentElement.querySelector('.project-placeholder').style.display='block';">
+                            <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: none;"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Student Management System</h3>
+                            <p class="project-description">Desktop application to manage student records, attendance, and grades. Integrated SQL database to store and retrieve user data efficiently. Implemented CRUD operations to streamline administrative tasks.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Tkinter</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info-section">
+                        <h3>Let's Work Together</h3>
+                        <p class="contact-intro">
+                            Have a project in mind? Let's collaborate and create something amazing together.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>omsahu522@icloud.com</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <span>+91 99934 80946</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>Rajnandgaon, Chhattisgarh</span>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://linkedin.com/in/om-kumar-sahu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="contact-social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/omsahu" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="contact-social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-section">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                Send Message
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>Thank you for visiting my portfolio website.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>omsahu522@icloud.com</p>
+                    <p>Rajnandgaon, Chhattisgarh</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Om Kumar Sahu. Crafted with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
